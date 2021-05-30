@@ -1,0 +1,11 @@
+@font-face { 
+	 font-family: 'Century Gothic Bold';
+	src: url('../fonts/Century Gothic Bold.eot');                      /* IE9 Compat Modes */ 
+	src: url('../fonts/Century Gothic Bold.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+		  url('../fonts/Century Gothic Bold.woff2') format('woff2'),                  /* Новейшие браузеры */ 
+		  url('../fonts/Century Gothicn Bold.woff') format('woff'),                    /* Новые браузеры и IE9+ */ 
+		  url('../fonts/Century Gothic Bold.ttf')  format('truetype'),                /* Старые Safari, Android, iOS */ 
+		  url('webfont.svg#svgFontName') format('svg');          /* Древние Safari, iOS, Android */ 
+	font-weight: 700; 
+	font-style: normal; 
+ }

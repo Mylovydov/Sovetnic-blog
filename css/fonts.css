@@ -1,9 +1,10 @@
+@charset "UTF-8";
 @font-face {
-	font-family: "Century Gothic";
-	src: url("../fonts/Century Gothic Bold.eot");
-	src: url("../fonts/Century Gothic Bold.eot?#iefix") format("embedded-opentype"),
-			 url("../fonts/Century-Gothic-Bold.woff") format("woff"),
-			 url("../fonts/Century Gothic Bold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+  font-family: 'Century Gothic Bold';
+  src: url("../fonts/Century Gothic Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Century Gothic Bold.eot") format("embedded-opentype"), url("../fonts/Century Gothic Bold.woff2") format("woff2"), url("../fonts/Century Gothicn Bold.woff") format("woff"), url("../fonts/Century Gothic Bold.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Древние Safari, iOS, Android */
+  font-weight: 700;
+  font-style: normal;
 }

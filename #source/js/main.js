@@ -1,3 +1,3 @@
-//@prepros-append jq-start.js
-//@prepros-append jq-script.js
-//@prepros-append jq-end.js
+// @prepros-append ibg.js
+// @prepros-append script.js
+// @prepros-append rating.js

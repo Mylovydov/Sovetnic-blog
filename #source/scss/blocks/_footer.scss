@@ -1,0 +1,188 @@
+.footer {
+	background-color: $white;
+	border-top: 1px solid #ECE8F4;
+
+	&__body {
+		padding: 3.8rem 0 2.3rem;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -1rem;
+	}
+
+	&__column {
+		flex: 1 1 25%;
+		padding: 0 1rem;
+
+		@media (max-width: 1066px) {
+			margin-bottom: 4rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		@media (max-width: $md3) {
+			text-align: center;
+			flex: 1 1 100%;
+		}
+	}
+
+	&__menu {
+		padding-left: 12rem;
+
+		@media (max-width: $md3) {
+			padding: 0;
+		}
+	}
+
+	&__requisites {
+		padding-left: 1rem;
+
+		@media (max-width: $md3) {
+			padding: 0;
+		}
+	}
+
+	&__social {
+		margin-bottom: 4rem;
+		@media (min-width: 1066px) {
+		margin-bottom: 6rem;
+		}
+
+	&__title {
+		font-family: 'Century Gothic Bold';
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: $dark;
+
+		margin-bottom: 1.5rem;
+	}
+	}
+
+	&__info {
+		width: 24rem;
+
+		@media (max-width: 1066px) {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+	&__copy-item {
+		margin-bottom: 1rem;
+		color: $secondary;
+		a {
+			color: inherit;
+		}
+		&:hover {
+			@media (min-width: $md3) {
+				text-decoration: underline;
+			}
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+// ================================================
+
+.logo-footer {
+	display: block;
+
+	&__img {
+		width: 27.5rem;
+
+		@media (max-width: $md3) {
+			margin: 0 auto;
+			width: 16rem;
+		}
+	}
+}
+// ================================================
+
+.menu-footer {
+
+	&__title {
+		font-family: 'Century Gothic Bold';
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: $dark;
+
+		margin-bottom: 1.5rem;
+
+		@media (max-width: $md3) {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		font-weight: 400;
+		font-size: 1.4rem;
+		line-height: 3rem;
+		color: $dark;
+
+		@media (max-width: $md3) {
+			font-size: 1.6rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__link {
+		color: inherit;
+
+		&:hover {
+			@media (min-width: $md3) {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+// ================================================
+
+.requisites-footer {
+
+	&__title {
+		font-family: 'Century Gothic Bold';
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: $dark;
+
+		margin-bottom: 2rem;
+
+		@media (max-width: $md3) {
+			font-size: 2rem;
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		font-weight: 400;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		color: $dark;
+
+		margin-bottom: 1.5rem;
+
+		span {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+		@media (max-width: $md3) {
+			font-size: 1.6rem;
+			margin-bottom: 2rem;
+		}
+	}
+}
+// ================================================
+
