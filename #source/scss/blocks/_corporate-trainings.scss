@@ -1,0 +1,18 @@
+.corporate-trainings {
+	// .corporate-trainings__banners
+	&__banners {
+		background-color: $white;
+		padding: 6.5rem 0;
+
+		@media (max-width: $md3) {
+			padding: 4rem 0;
+		}
+	}
+}
+// ================================================
+
+.banners-events-corporate {
+	// .banners-events-corporate__container
+	&__container {
+	}
+}

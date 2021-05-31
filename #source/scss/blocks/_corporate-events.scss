@@ -71,6 +71,11 @@
 	}
 
 	&__form {
+		margin-top: 5.5rem;
+
+		@media (max-width: $md3) {
+			margin-top: 3.6rem;
+		}
 	}
 }
 // ================================================

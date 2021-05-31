@@ -78,7 +78,7 @@ body {
 	background-color: $primary;
 
 	font-family: "Montserrat", sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	color: $dark;
 	font-weight: 400;
 	line-height: 1.5;
@@ -171,4 +171,5 @@ body.lock {
 @import "blocks/services";
 @import "blocks/corporate-events";
 @import "blocks/corporate-trainings";
+@import "blocks/about";
 // </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> ========================

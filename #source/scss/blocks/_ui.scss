@@ -228,10 +228,15 @@
 		}
 	}
 
+	&--purple-maxw {
+		max-width: 22.1rem;
+	}
+
 	&--blue {
 		padding: 1.5rem 3.9rem 1.4rem;
 		border-radius: 5.5rem;
 		width: 100%;
+		max-width: 22.1rem;
 
 		background-color: #1daeff;
 		box-shadow: 0 1px 1px rgba(#62c7ff, 1), 0 3px 1px rgba(#0082cb, 1), 0 7px 26px rgba(#1daeff, 0.2);
