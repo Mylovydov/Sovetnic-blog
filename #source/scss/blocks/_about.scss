@@ -8,7 +8,7 @@
 }
 // ================================================
 .problems-about {
-	padding-bottom: 7rem;
+	padding-bottom: 5rem;
 	// .problems-about__container
 	&__container {
 	}
@@ -41,13 +41,16 @@
 		@media (max-width: $md3) {
 			flex: 0 0 100%;
 			margin: 4.8rem 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 	// .problems-about__item
 	&__item {
 	}
 }
-// ================================================
 .item-problems {
 	background: #ede7ff;
 	border: 1px solid #e6dff5;
@@ -113,6 +116,8 @@
 }
 // ================================================
 .yourself-about {
+	background-color: #fff;
+	padding-top: 6.5rem;
 	// .yourself-about__container
 	&__container {
 	}
@@ -142,7 +147,7 @@
 		margin-bottom: 5rem;
 
 		@media (max-width: $md2) {
-		flex: 0 0 100%;
+			flex: 0 0 100%;
 		}
 
 		@media (max-width: $md4) {
@@ -153,7 +158,6 @@
 	&__item {
 	}
 }
-// ================================================
 .item-yourself {
 	position: relative;
 	// .item-yourself__row
@@ -203,5 +207,113 @@
 	}
 	// .item-yourself__text
 	&__text {
+	}
+}
+// ================================================
+.create-about {
+	padding-top: 6.5rem;
+	// .create-about__container
+	&__container {
+	}
+	// .create-about__title
+	&__title {
+		margin-bottom: 3rem;
+	}
+	// .create-about__row
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media (min-width: 665px){
+			margin: 0 -1rem;
+		}
+	}
+	// .create-about__column
+	&__column {
+
+		margin: 1rem 0;
+
+		@media (min-width: $md1) {
+			flex: 0 1 33.333%;
+		}
+		@media (max-width: $md1) {
+			flex: 0 1 50%;
+		}
+		@media (min-width: 665px) {
+			padding: 0 1rem;
+		}
+		
+		@media (max-width: 665px) {
+			flex: 0 1 100%;
+		}
+
+	}
+	// .create-about__item
+	&__item {
+	}
+}
+
+.item-create {
+	border-radius: 0.5rem;
+	border: 1px solid #e6dff5;
+	background-color: $white;
+	overflow: hidden;
+	min-height: 15.8rem;
+	display: flex;
+
+	height: 100%;
+	// .item-create__row
+	&__row {
+		display: flex;
+		width: 100%;
+
+		@media (max-width: $md3) {
+			flex-direction: column;
+		}
+	}
+	// .item-create__icon
+	&__icon {
+		flex: 0 0 25%;
+		background-color: #ede7ff;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			position: relative;
+			top: 0.5rem;
+
+			max-width: 9rem;
+		}
+	}
+	// .item-create__content
+	&__content {
+		flex: 1 1 auto;
+		padding: 2rem 1.5rem 2rem 2rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: $md3) {
+			text-align: center;
+			max-width: 30rem;
+			margin: auto;
+		}
+	}
+	// .item-create__title
+	&__title {
+		font-family: "Century Gothic";
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 125%;
+		color: $dark;
+
+		margin-bottom: 1rem;
+	}
+	// .item-create__text
+	&__text {
+		font-size: 1.5rem;
 	}
 }
