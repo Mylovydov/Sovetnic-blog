@@ -1019,7 +1019,6 @@ textarea.input {
   align-items: center;
 }
 .menu__list li {
-  padding: 2.3rem 4rem 2.3rem;
   border-bottom: 2px solid rgba(59, 23, 136, 0);
   transition: all 0.2s linear;
 }
@@ -1040,6 +1039,7 @@ textarea.input {
   font-size: 1.6rem;
   color: #1D0B44;
   line-height: 2.2rem;
+  padding: 2.3rem 4rem 2.3rem;
 }
 @media (max-width: 767.98px) {
   .menu__body {

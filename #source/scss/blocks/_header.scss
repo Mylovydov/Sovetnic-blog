@@ -135,14 +135,8 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		// position: relative;
-		// z-index: 3;
-		// @media (max-width: $md3) {
-		// 	display: block;
-		// 	text-align: center;
-		// }
 		li {
-			padding: 2.3rem 4rem 2.3rem;
+			
 			border-bottom: 2px solid rgba($secondary, 0);
 			transition: all 0.2s linear;
 
@@ -165,6 +159,7 @@
 		font-size: 1.6rem;
 		color: $dark;
 		line-height: 2.2rem;
+		padding: 2.3rem 4rem 2.3rem;
 	}
 
 	@media (max-width: $md3) {
