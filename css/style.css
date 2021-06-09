@@ -993,6 +993,15 @@ textarea.input {
   font-size: 2.2rem;
   margin-bottom: 3.5rem;
 }
+.body-popup {
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+  background-color: #fff;
+  padding: 50px 25px;
+  background-color: transparent;
+  width: 100%;
+  max-width: 992px;
+}
 .header {
   border: 1px solid #f5f0ff;
   margin-bottom: 4rem;

@@ -89,3 +89,19 @@
 	// .buynow-popup__btn
 	&__btn {}
 }
+// ================================================
+.body-popup {
+	transform: scale(0);
+	transition: all 0.3s ease 0s;
+	background-color: $white;
+	padding: 50px 25px;
+	background-color: transparent;
+	width: 100%;
+	max-width: 992px;
+
+	&__close {
+
+	}
+}
+
+
