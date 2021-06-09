@@ -263,4 +263,16 @@
 
 .control-services__body .slick-dots li.slick-active {
 	background-color: #E4CBFB;
+}ervices__body .slick-dots li button {
+	font-size: 0;
+}
+
+@media (min-width: 767.98px) {
+	.control-services__body .slick-dots li:hover {
+		background-color: #f2eef8;
+	}
+}
+
+.control-services__body .slick-dots li.slick-active {
+	background-color: #E4CBFB;
 }

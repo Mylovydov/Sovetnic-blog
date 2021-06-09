@@ -1,0 +1,44 @@
+- Класс ._req добавляем инпуту - добавляет верификацию полю и выводит сообщение об ошибке
+<input autocomplete="off" id="inp" type="text" name="form[]" data-error="Ошибка" data-value="Подпись поля" class="input _req">
+
+- Класс ._email добавляем инпуту (используем вместе с классом ._req) - добавляет верификацию email и выводит сообщение об ошибке
+<input autocomplete="off" id="inp" type="text" name="form[]" data-error="Ошибка" data-value="Подпись поля" class="input _email _req">
+
+- Инпуту добавляется класс ._error, который мы можем стилизовать
+
+- Cамому полю и его родителю добавляется класс .focus, который мы также можем стилизовать
+
+// ================================================
+// ================================================
+MAsks
+- Чтобы подключить возможность использовать маску, нам нужно в vendors.js подключить 'libs/inputmask.min.js'
+
+- В шаблоне уже вшито 2 маски
+
+	- _digital - не позволяет вводить ничего, кроме цифр
+	<input autocomplete="off" id="inp" type="text" name="form[]" data-error="Ошибка" data-value="Подпись поля" class="input _digital">
+
+	- _phone - не позволяет вводить ничего, кроме цифр и добавляет маску телефона.
+	Изменить маску можно в forms.js
+	<input autocomplete="off" id="inp" type="text" name="form[]" data-error="Ошибка" data-value="Подпись поля" class="input _phone">
+
+	// ================================================
+	// ================================================
+
+<!-- <SELECT (sel+tab) -->
+	<select name="form[]" class="form">
+		<option value="1" selected="selected">Пункт №1</option>
+		<option value="2">Пункт №2</option>
+		<option value="3">Пункт №3</option>
+		<option value="4">Пункт №4</option>
+	</select>
+
+	- класс .form можем менять на свой для каждого из селектов на сайте и стилизовать по нему.
+Он добавляется автоматически.
+
+// ================================================
+// ================================================
+
+<!-- Отправка формы AJAX-->
+добавление атрибута data-ajax="true" включает отправку ajax. Останется заполнить action="" и method=""
+<form class="form" data-ajax="true" method="POST" action="sendmail.php"></form>

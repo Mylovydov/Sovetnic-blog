@@ -1,10 +1,10 @@
 // ОСНОВНЫЕ СКРПИТЫ ================================================
-$(document).ready(function() {
-	$('.burger').click(function(event) {
-		$('.burger, .nav').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
-});
+// $(document).ready(function() {
+// 	$('.burger').click(function(event) {
+// 		$('.burger, .nav').toggleClass('active');
+// 		$('body').toggleClass('lock');
+// 	});
+// });
 
 $(document).ready(function(){
 	$('.articles-preview__slider').slick({

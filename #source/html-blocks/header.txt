@@ -1,0 +1,27 @@
+Добавляем якорные ссылки
+
+Как сделать обычную прокрутку:
+- ссылкам в меню добавляем класс ._goto
+- в атрибуте href="#gallery-block" пишем названия блоков к которым прокручивать
+
+<nav class="menu__body">
+	<ul class="menu__list">
+		<li><a href="#tabs-block" class="menu__link _goto">Табы</a></li>
+		<li><a href="#form" class="menu__link _goto">Форма</a></li>
+		<li><a href="#gallery-block" class="menu__link _goto">Галерея</a></li>
+	</ul>
+</nav>
+
+// ================================================
+Как сделать чтобы ссылка активного блока выделялась:
+- ссылкам в меню добавляем класс ._goto-block
+- ссылкам меню в scss добавляем стилизацию класса ._active
+- в атрибуте href="#gallery-block" пишем названия блоков к которым прокручивать
+
+<nav class="menu__body">
+	<ul class="menu__list">
+		<li><a href="#tabs-block" class="menu__link __goto-block">Табы</a></li>
+		<li><a href="#form" class="menu__link __goto-block">Форма</a></li>
+		<li><a href="#gallery-block" class="menu__link __goto-block">Галерея</a></li>
+	</ul>
+</nav>

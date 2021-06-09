@@ -1,122 +1,99 @@
 .footer {
 	background-color: $white;
-	border-top: 1px solid #ECE8F4;
+	border-top: 1px solid #ece8f4;
+
+	&__container {
+	}
 
 	&__body {
 		padding: 3.8rem 0 2.3rem;
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -1rem;
+		justify-content: space-between;
 	}
 
-	&__column {
-		flex: 1 1 25%;
-		padding: 0 1rem;
-
-		@media (max-width: 1066px) {
-			margin-bottom: 4rem;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
+	&__logo {
+		flex: 0 1 23%;
+		display: flex;
+		justify-content: center;
+		a {
+			display: inline-block;
 		}
-
-		@media (max-width: $md3) {
-			text-align: center;
+		img {
+		}
+		@media (max-width: 940px) {
 			flex: 1 1 100%;
+			margin-bottom: 4rem;
+			img {
+				max-width: 18rem;
+			}
 		}
 	}
 
 	&__menu {
-		padding-left: 12rem;
+		flex: 0 1 14rem;
+		padding: 0 2rem;
 
 		@media (max-width: $md3) {
-			padding: 0;
+			flex: 0 1 50%;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+		@media (max-width: 665px) {
+			flex: 1 1 100%;
 		}
 	}
 
 	&__requisites {
-		padding-left: 1rem;
-
+		flex: 0 1 15rem;
+		padding: 0 2rem;
 		@media (max-width: $md3) {
-			padding: 0;
-		}
-	}
-
-	&__social {
-		margin-bottom: 4rem;
-		@media (min-width: 1066px) {
-		margin-bottom: 6rem;
+			flex: 0 1 50%;
+			text-align: center;
+			margin-bottom: 3rem;
 		}
 
-	&__title {
-		font-family: 'Century Gothic Bold';
-		font-weight: 700;
-		font-size: 1.6rem;
-		line-height: 2rem;
-		color: $dark;
-
-		margin-bottom: 1.5rem;
-	}
+		@media (max-width: 665px) {
+			flex: 1 1 100%;
+		}
 	}
 
 	&__info {
-		width: 24rem;
-
-		@media (max-width: 1066px) {
-			margin: 0 auto;
-			text-align: center;
-		}
-	}
-
-	&__copy-item {
-		margin-bottom: 1rem;
-		color: $secondary;
-		a {
-			color: inherit;
-		}
-		&:hover {
-			@media (min-width: $md3) {
-				text-decoration: underline;
-			}
-		}
-
-		&:last-child {
-			margin: 0;
+		padding: 0 2rem;
+		@media (max-width: $md3) {
+			flex: 1 1 100%;
 		}
 	}
 }
 // ================================================
+.menu-footer__title,
+.requisites-footer__title,
+.info-footer__title {
+	font-family: "Century Gothic Bold";
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	color: $dark;
 
+	margin-bottom: 1.5rem;
+
+	@media (max-width: $md3) {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+// ================================================
 .logo-footer {
 	display: block;
 
 	&__img {
 		width: 27.5rem;
-
-		@media (max-width: $md3) {
-			margin: 0 auto;
-			width: 16rem;
-		}
 	}
 }
+
 // ================================================
-
 .menu-footer {
-
 	&__title {
-		font-family: 'Century Gothic Bold';
-		font-weight: 700;
-		font-size: 1.6rem;
-		line-height: 2rem;
-		color: $dark;
-
-		margin-bottom: 1.5rem;
-
-		@media (max-width: $md3) {
-			font-size: 2rem;
-			margin-bottom: 2rem;
-		}
 	}
 
 	&__list {
@@ -145,21 +122,8 @@
 	}
 }
 // ================================================
-
 .requisites-footer {
-
 	&__title {
-		font-family: 'Century Gothic Bold';
-		font-weight: 700;
-		font-size: 1.6rem;
-		line-height: 2rem;
-		color: $dark;
-
-		margin-bottom: 2rem;
-
-		@media (max-width: $md3) {
-			font-size: 2rem;
-		}
 	}
 
 	&__list {
@@ -184,5 +148,46 @@
 		}
 	}
 }
-// ================================================
 
+.info-footer {
+	@media (max-width: $md3) {
+		text-align: center;
+	}
+	// .info-footer__title
+	&__title {
+	}
+	// .info-footer__social
+	&__social {
+		justify-content: start;
+		margin-bottom: 5.5rem;
+		@media (max-width: $md3) {
+			justify-content: center;
+			margin-bottom: 4rem;
+		}
+	}
+	// .info-footer__copy
+	&__copy {
+	}
+}
+// ================================================
+.copy-info-footer {
+	// .copy-info-footer__item
+	&__item {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		a {
+			color: $secondary;
+		}
+		&:hover {
+			@media (min-width: $md3) {
+				text-decoration: underline;
+			}
+		}
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

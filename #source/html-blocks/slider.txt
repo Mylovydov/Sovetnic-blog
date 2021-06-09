@@ -1,0 +1,21 @@
+<!-- SLIDER SWIPER -->
+Создание слайдера:
+- Подключить файл libs/swiper.min.js в vendors
+- Подключить файл files/sliders.js в app.js (повыше)
+- Самому слайдеру нам нужно добавить технический класс _swiper и он построит всю необходимую структуру. Структура, которая создается описана в sliders.js (//BildSlider)
+
+пример структуры
+	<div class="slider _swiper">
+		<div class="slider__slide"></div>
+		<div class="slider__slide"></div>
+		<div class="slider__slide"></div>
+	</div>
+
+технический класс _swiper описан в ui.scss
+
+- Затем идем в sliders.js и меняем класс нашего конкретного слайдера
+let sliderSlider = new Swiper('.slider', {}
+
+
+
+!!!!Если слайдер находится во flex-контейнере, то контейнеру добавляем min-width: 0;

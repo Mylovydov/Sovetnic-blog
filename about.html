@@ -2,28 +2,23 @@
 <html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Услуги</title>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
-
-
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<!-- <header class="header">
 			<div class="header__container _container">
 				<div class="header__row">
 					<a href="index.html" class="header__logo">
 						<img src="img/logo.svg" alt="logo">
 					</a>
-
 					<div class="header__burger burger">
 						<span></span>
 					</div>
@@ -34,7 +29,7 @@
 								<a class="nav__link" href="index.html">Главная</a>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#">О Вас</a>
+								<a class="nav__link" href="about.html">О Вас</a>
 							</li>
 							<li class="nav__item">
 								<a class="nav__link" href="services.html">Услуги</a>
@@ -47,13 +42,37 @@
 							</li>
 						</ul>
 					</nav>
-
 					</button>
 				</div>
+			</div>
+		</header> -->
 
-			</div> <!-- /.container -->
-		</header> <!-- /.header -->
 
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__row">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<div class="menu__icon icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a class="menu__link" href="index.html">Главная</a></li>
+								<li><a class="menu__link" href="about.html">О Вас</a></li>
+								<li><a class="menu__link" href="services.html">Услуги</a></li>
+								<li><a class="menu__link" href="#">Карта сайта</a></li>
+								<li><a class="menu__link" href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
 		<main class="content">
 			<div class="content__breadcrumbs breadcrumbs">
 				<div class="_container">
@@ -312,29 +331,28 @@
 					</div>
 				</section>
 			</div>
-		</main> <!-- /.content -->
+		</main>
 
 		<footer class="footer">
 			<div class="footer__container _container">
 				<div class="footer__body">
-					<div class="footer__column">
-						<a href="#" class="logo-footer">
-							<img class="logo-footer__img" src="img/footer/footer-logo.svg" alt="Логотип блога советник">
+					<div class="footer__logo">
+						<a href="index.html">
+							<img src="img/footer/footer-logo.svg" alt="Логотип блога советник">
 						</a>
 					</div>
 
-					<div class="footer__column">
 						<div class="footer__menu menu-footer">
 							<h6 class="menu-footer__title">Навигация</h6>
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
-									<a class="menu-footer__link" href="#">Главная</a>
+									<a class="menu-footer__link" href="index.html">Главная</a>
 								</li>
 								<li class="menu-footer__item">
-									<a class="menu-footer__link" href="#">О Вас</a>
+									<a class="menu-footer__link" href="about.html">О Вас</a>
 								</li>
 								<li class="menu-footer__item">
-									<a class="menu-footer__link" href="#">Услуги</a>
+									<a class="menu-footer__link" href="services.html">Услуги</a>
 								</li>
 								<li class="menu-footer__item">
 									<a class="menu-footer__link" href="#">Карта сайта</a>
@@ -344,9 +362,7 @@
 								</li>
 							</ul>
 						</div>
-					</div>
 
-					<div class="footer__column">
 						<div class="footer__requisites requisites-footer">
 							<div class="requisites-footer__title">Реквизиты</div>
 							<ul class="requisites-footer__list">
@@ -358,13 +374,10 @@
 								</li>
 							</ul>
 						</div>
-					</div>
 
-					<div class="footer__column">
-						<div class="footer__info">
-							<div class="footer__social">
-								<h6 class="footer__social__title">Мы в соц. сетях</h6>
-								<ul class="social">
+						<div class="footer__info info-footer">
+							<h6 class="info-footer__title">Мы в соц. сетях</h6>
+								<ul class="info-footer__social social">
 									<li class="social__item">
 										<a class="social__link" href="#" target="_blank">
 											<img src="img/footer/instagram.svg" alt="Иконка instagram">
@@ -389,30 +402,57 @@
 										</a>
 									</li>
 								</ul>
-							</div>
 
-							<div class="footer__copy">
-								<p class="footer__copy-item"><a href="#" target="_blank">Политика конфиденциальности</a></p>
-								<p class="footer__copy-item">© 2012-2020 Sovetnik</p>
+							<div class="info-footer__copy copy-info-footer">
+								<p class="copy-info-footer__item"><a href="#" target="_blank">Политика конфиденциальности</a></p>
+								<p class="copy-info-footer__item">© 2012-2020 Sovetnik</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</footer>	</div>
+<div class="popup popup_buynow">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+			<div class="buynow-popup">
+				<form class="buynow-popup__form form" action="#" method="POST">
+					<h6 class="buynow-popup__title form__title">Оставьте заявку и мы вам перезвоним</h6>
+					<div class="form__group group-form">
+						<div class="group-form__row">
+							<div class="group-form__column">
+								<label for="username">
+									<input class="input _req" autocomplete="off" id="username" type="text" name="username"
+										data-error="Введите корректное имя" data-value="Иван Иванов">
+								</label>
+							</div>
+							<div class="group-form__column">
+								<label for="useremale">
+									<input class="input _email _req" autocomplete="off" id="useremale" type="text"
+										name="useremail" data-error="Введите корректный email" data-value="ivan@gmail.com">
+								</label>
 							</div>
 						</div>
 					</div>
-				</div>
+					<button type="submit" class="btn btn--dark-violet btn--width buynow-popup__btn">Оставить заявку</button>
+				</form>
 			</div>
-		</footer>
+		</div>
+	</div>
+</div>
 
-	</div> <!-- /.wrapper -->
-</body>
+<!-- <div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div> --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-<!-- Подключаем fontawesome -->
-<script src="https://kit.fontawesome.com/8c250f5436.js" crossorigin="anonymous"></script>
-<!-- Подключаем jquery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Подключаем Slick -->
-<script src="js/slick.min.js"></script>
-<!-- Подключаем MixItUp -->
-<script src="js/mixitup.min.js"></script>
-<!-- Подключаем JS -->
-<script src="js/main.js"></script>
+	<script src="js/vendors.js"></script>
+	<script src="js/app.js"></script></body>
 
 </html>

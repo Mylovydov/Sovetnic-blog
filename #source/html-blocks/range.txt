@@ -1,0 +1,17 @@
+range - ползунки для указания каких то данных
+- описан в forms.js (//RANGE)
+
+Создание:
+- подключаем nouislider.js в vendors.js (читаем документацию если нужно)
+- подключаем wNumb.min.js в vendors.js (форматирует цифры нужным образом)
+- подключаем nouislider.scss в style.scss (тут меняем стили под себя)
+- для каждого проекта мы идем в forms.js и меняем настройки под себя в том числе класс .price__range (или какой там будет)мы должны подставить в forms.js
+
+Структура
+<div class="price">
+	<div class="price__range"></div>
+	<div class="price__inputs">
+		<input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
+		<input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
+	</div>
+</div>

@@ -243,12 +243,14 @@
 
 		transition: transform 0.2s linear, box-shadow 0.2s linear;
 
-		@include minbreakpoint($tablet-bp) {
+		@media (min-width:$md2){
 			&:hover {
-				transform: scale(1.015);
-				box-shadow: 0px 2px 30px rgba(29, 11, 68, 0.15);
+				.articles-preview__item-img {
+					transform: scale(1.05);
+				}
 			}
 		}
+
 		@media (min-width: 637px) {
 			&--big {
 				grid-column: span 2;
@@ -262,6 +264,8 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+
+		transition: transform 0.2s linear;
 	}
 	&__body {
 		position: absolute;
@@ -306,6 +310,7 @@
 	}
 	&__body-title {
 		font-family: "Century Gothic Bold";
+		display: inline-block;
 		font-weight: 700;
 		font-size: 1.8rem;
 		line-height: 1.25;
@@ -360,7 +365,7 @@
 		color: $white;
 
 		margin-bottom: 2rem;
-		display: block;
+		display: inline-block;
 
 		&:hover {
 			text-decoration: underline;
@@ -554,51 +559,11 @@
 	}
 
 	&__form {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-
-		label {
-			flex-grow: 1;
-		}
-	}
-
-	&__form-input {
-		width: 100%;
-		height: 4.7rem;
-		display: block;
-		margin-bottom: 1rem;
-
-		background-color: $white;
-		border: 1px solid #d9d0eb;
-		box-shadow: 0px 4px 9px rgba(33, 0, 67, 0.1);
-		border-radius: 55px;
-
-		color: $secondary;
-		text-align: center;
-		font-size: 1.2rem;
-		font-weight: 500;
-
-		transition: background-color 0.2s linear;
-
-		&:focus {
-			border: 1px solid $secondary;
-			background-color: #fcfcfc;
-
-			outline: none;
-		}
-
-		&::placeholder {
-			font-weight: 500;
-			font-size: 1.2rem;
-			color: $lighten;
-		}
-
-		@media (max-width: 636px) {
-			height: 5.2rem;
-		}
+		position: relative;
 	}
 }
+
+
 // ================================================
 .review {
 	background: #ffffff;

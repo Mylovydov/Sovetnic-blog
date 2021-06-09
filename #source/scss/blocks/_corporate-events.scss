@@ -79,6 +79,20 @@
 	}
 }
 // ================================================
+.social-events {
+	padding-top: 3.5rem;
+	border-top: 1px solid #ece8f4;
+	// .social-events__container
+	&__container {
+
+	}
+	&__social {
+		@media (max-width:$md2){
+			justify-content: center;
+		}
+	}
+}
+// ================================================
 .types-events {
 	// .types-services__title
 	&__title {

@@ -1,0 +1,11 @@
+Увеличение / уменьшение количества:
+- описано в forms.scss
+
+Структурва
+<div class="quantity">
+	<div class="quantity__button quantity__button_minus"></div>
+	<div class="quantity__input">
+		<input autocomplete="off" type="text" name="form[]" value="1">
+	</div>
+	<div class="quantity__button quantity__button_plus"></div>
+</div>

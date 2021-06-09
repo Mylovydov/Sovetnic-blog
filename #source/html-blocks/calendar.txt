@@ -1,0 +1,8 @@
+Описан в forms.js (_date)
+
+Чтобы сделать календарь в форме:
+- Добавляем нипуту класс ._date
+<input type="text" name="form[] class="input _date">
+
+-в vendors подключаем libs/datepicker-full.min.js
+- в scss подключаем datepicker.scss

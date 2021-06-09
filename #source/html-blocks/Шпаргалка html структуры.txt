@@ -1,0 +1,230 @@
+шпаргалка для структуры и функций в html-blocks
+
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="page__side _side-wrapper">
+				<div class="page__item _side-block">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus sequi totam. Facere molestias esse error, rem soluta tempora cupiditate quis? Asperiores natus esse minus, aliquid nesciunt aperiam? Possimus, voluptatum.
+					Adipisci perferendis veritatis delectus nesciunt consequuntur, assumenda doloribus quam id ea quos vero rem nulla repudiandae nemo est vel iste ab porro soluta fugiat dolor? Qui praesentium sit est repudiandae.
+					Culpa commodi qui numquam a deserunt facilis totam veniam eius ipsam rerum aut quisquam placeat optio, hic vel exercitationem quis at distinctio architecto voluptatem temporibus ex suscipit quasi vitae? Iusto.
+				</div>
+			</div>
+			<div class="page__body">
+				<div class="tabs-block _tabs _scr-item">
+					<nav class="tabs-block__nav">
+						<div class="tabs-block__item _tabs-item _active">Пункт №1</div>
+						<div class="tabs-block__item _tabs-item">Пункт №2</div>
+						<div class="tabs-block__item _tabs-item">Пункт №3</div>
+					</nav>
+					<div class="tabs-block__body">
+						<div class="tabs-block__block _tabs-block _active">
+							[Пункт №1]Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat incidunt molestias
+							itaque
+							adipisci explicabo reiciendis eaque, sequi blanditiis cumque illum praesentium magnam aliquam atque
+							eum unde expedita dicta sed modi.
+							Impedit sint optio iure veritatis eos voluptatem atque culpa debitis quasi ipsa ratione est beatae
+							vero placeat voluptatum sequi, laboriosam mollitia ut unde esse eaque? Quia repellat culpa
+							accusantium
+							vitae?
+							Debitis, sequi necessitatibus! Similique eaque ut accusamus magni. Id praesentium voluptatibus
+							minus
+							odit tempore dolore, nulla rerum neque odio incidunt atque cumque temporibus numquam veritatis
+							alias
+							quod necessitatibus corrupti illum.
+						</div>
+						<div class="tabs-block__block _tabs-block">
+							[Пункт №2]Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat incidunt molestias
+							itaque
+							adipisci explicabo reiciendis eaque, sequi blanditiis cumque illum praesentium magnam aliquam atque
+							eum unde expedita dicta sed modi.
+							Impedit sint optio iure veritatis eos voluptatem atque culpa debitis quasi ipsa ratione est beatae
+							vero placeat voluptatum sequi, laboriosam mollitia ut unde esse eaque? Quia repellat culpa
+							accusantium
+							vitae?
+							Debitis, sequi necessitatibus! Similique eaque ut accusamus magni. Id praesentium voluptatibus
+							minus
+							odit tempore dolore, nulla rerum neque odio incidunt atque cumque temporibus numquam veritatis
+							alias
+							quod necessitatibus corrupti illum.
+						</div>
+						<div class="tabs-block__block _tabs-block">
+							[Пункт №3]Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat incidunt molestias
+							itaque
+							adipisci explicabo reiciendis eaque, sequi blanditiis cumque illum praesentium magnam aliquam atque
+							eum unde expedita dicta sed modi.
+							Impedit sint optio iure veritatis eos voluptatem atque culpa debitis quasi ipsa ratione est beatae
+							vero placeat voluptatum sequi, laboriosam mollitia ut unde esse eaque? Quia repellat culpa
+							accusantium
+							vitae?
+							Debitis, sequi necessitatibus! Similique eaque ut accusamus magni. Id praesentium voluptatibus
+							minus
+							odit tempore dolore, nulla rerum neque odio incidunt atque cumque temporibus numquam veritatis
+							alias
+							quod necessitatibus corrupti illum.
+						</div>
+					</div>
+				</div>
+
+				<div class="spollers-block _spollers _one _scr-item">
+					<div class="spollers-block__item">
+						<div class="spollers-block__title _spoller">Вопрос</div>
+						<div class="spollers-block__body">
+							Ответ Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non, sapiente dolore sequi
+							magnam
+							repellat ratione temporibus ea, deleniti placeat ad esse mollitia unde nulla debitis soluta cumque
+							neque a.
+							Necessitatibus blanditiis voluptate voluptatibus nihil eius ratione odit! Illum animi dolore sed.
+							Ea
+							non mollitia facere impedit quaerat ducimus? Neque aspernatur optio laudantium dolorum similique
+							dignissimos at quibusdam et iusto.
+							Reiciendis veritatis recusandae enim! Asperiores hic consequuntur adipisci temporibus saepe soluta
+							deleniti, in minima animi voluptatum molestiae explicabo modi dolorum cumque facere beatae facilis
+							qui
+							voluptatibus! Quod dolorem praesentium voluptas.
+						</div>
+					</div>
+					<div class="spollers-block__item">
+						<div class="spollers-block__title _spoller">Вопрос</div>
+						<div class="spollers-block__body">
+							Ответ Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non, sapiente dolore sequi
+							magnam
+							repellat ratione temporibus ea, deleniti placeat ad esse mollitia unde nulla debitis soluta cumque
+							neque a.
+							Necessitatibus blanditiis voluptate voluptatibus nihil eius ratione odit! Illum animi dolore sed.
+							Ea
+							non mollitia facere impedit quaerat ducimus? Neque aspernatur optio laudantium dolorum similique
+							dignissimos at quibusdam et iusto.
+							Reiciendis veritatis recusandae enim! Asperiores hic consequuntur adipisci temporibus saepe soluta
+							deleniti, in minima animi voluptatum molestiae explicabo modi dolorum cumque facere beatae facilis
+							qui
+							voluptatibus! Quod dolorem praesentium voluptas.
+						</div>
+					</div>
+					<div class="spollers-block__item">
+						<div class="spollers-block__title _spoller">Вопрос</div>
+						<div class="spollers-block__body">
+							Ответ Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non, sapiente dolore sequi
+							magnam
+							repellat ratione temporibus ea, deleniti placeat ad esse mollitia unde nulla debitis soluta cumque
+							neque a.
+							Necessitatibus blanditiis voluptate voluptatibus nihil eius ratione odit! Illum animi dolore sed.
+							Ea
+							non mollitia facere impedit quaerat ducimus? Neque aspernatur optio laudantium dolorum similique
+							dignissimos at quibusdam et iusto.
+							Reiciendis veritatis recusandae enim! Asperiores hic consequuntur adipisci temporibus saepe soluta
+							deleniti, in minima animi voluptatum molestiae explicabo modi dolorum cumque facere beatae facilis
+							qui
+							voluptatibus! Quod dolorem praesentium voluptas.
+						</div>
+					</div>
+				</div>
+
+				<form class="form _scr-item" action="#" method="POST">
+					<div class="form__line">
+						<label for="inp" class="form__label">Подпись поля</label>
+						<input autocomplete="off" id="inp" type="text" name="form[]" data-error="Ошибка"
+							data-value="Подпись поля" class="input _date">
+					</div>
+					<div class="form__line">
+						<label for="inp" class="form__label">Подпись поля</label>
+						<input autocomplete="off" id="inp" type="text" name="form[]" data-error="Ошибка"
+							data-value="Подпись поля" class="input _phone">
+					</div>
+					<div class="form__line">
+						<select name="form[]" class="form">
+							<option value="1" selected="selected">Пункт №1</option>
+							<option value="2">Пункт №2</option>
+							<option value="3">Пункт №3</option>
+							<option value="4">Пункт №4</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<div class="quantity">
+							<div class="quantity__button quantity__button_minus"></div>
+							<div class="quantity__input">
+								<input autocomplete="off" type="text" name="form[]" value="1">
+							</div>
+							<div class="quantity__button quantity__button_plus"></div>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="price">
+							<div class="price__range"></div>
+							<div class="price__inputs">
+								<input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
+								<input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
+							</div>
+						</div>
+					</div>
+
+					<button type="submit" class="form__btn btn">Задать вопрос</button>
+				</form>
+
+				<div class="slider _scr-item _swiper">
+					<div class="slider__slide">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam fugit sed recusandae natus dolorum,
+						magni quam praesentium labore incidunt obcaecati inventore vitae sint velit tenetur dignissimos qui et
+						quia minima!
+					</div>
+					<div class="slider__slide">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam fugit sed recusandae natus dolorum,
+						magni quam praesentium labore incidunt obcaecati inventore vitae sint velit tenetur dignissimos qui et
+						quia minima!
+					</div>
+					<div class="slider__slide">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam fugit sed recusandae natus dolorum,
+						magni quam praesentium labore incidunt obcaecati inventore vitae sint velit tenetur dignissimos qui et
+						quia minima!
+					</div>
+				</div>
+
+				<div class="scr-item text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatum ad suscipit voluptates <a
+						class="_popup-link" href="#video" data-video="giRwHTpFsFw">perspiciatis</a> dicta sequi ullam,
+					deserunt
+					sit animi vitae <a href="" class="tippy">reprehenderit</a> ducimus omnis at, quisquam quae, est nemo
+					quasi!
+					Illum libero autem fugit quisquam beatae vel hic quidem tenetur. Officiis, enim. Nisi, consequuntur in <a
+						href="#callback" class="_popup-link">voluptas</a> nam reprehenderit vel quia ipsum totam eligendi iure
+					eos, odio facere aspernatur expedita. Rem!
+					Repellat quis, aliquam, ad optio ipsum fuga exercitationem odit quo quos cumque iste aliquid recusandae
+					eaque nihil ab nobis, fugit porro? Magni voluptate nihil porro nam provident odio expedita natus.
+					Commodi placeat tempore, fugit labore, natus at officia quidem pariatur quis eaque amet error, incidunt a
+					voluptatem neque voluptas magnam culpa saepe eum ratione ea nulla! Nemo voluptatibus error saepe!
+				</div>
+
+				<div class="gallery-block _gallery _scr-item">
+					<a href="img/01.jpg" class="gallery-block__item">
+						<img src="img/01.jpg" alt="">
+					</a>
+					<a href="img/02.jpg" class="gallery-block__item">
+						<img src="img/02.jpg" alt="">
+					</a>
+					<a href="img/03.jpg" class="gallery-block__item">
+						<img src="img/03.jpg" alt="">
+					</a>
+					<a href="img/04.jpg" class="gallery-block__item">
+						<img src="img/04.jpg" alt="">
+					</a>
+					<a href="img/05.jpg" class="gallery-block__item">
+						<img src="img/05.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</main>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

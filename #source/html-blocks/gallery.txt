@@ -1,0 +1,15 @@
+Описан в function.js
+
+<a></a> - большая картинка
+<img> - превью
+
+Создание:
+- подключаем в vendors файл libs/lightgallery.min.js
+- подключаем lightgallery.scss  в style.scss
+- Добавляем технический класс ._gallery
+Структура
+<div class="gallery-block _gallery">
+	<a href="img/01.jpg" class="gallery-block__item">
+		<img src="img/01.jpg" alt=""> 
+	</a>
+</div>

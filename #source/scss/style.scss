@@ -55,7 +55,7 @@ $statcolor: #C9C9DB;
 
 $header-height: 36rem;
 
-$z-index-header:1000;
+// $z-index-header:1000;
 // ====================================================
 
 
@@ -82,9 +82,10 @@ body {
 	color: $dark;
 	font-weight: 400;
 	line-height: 1.5;
-}
-body.lock {
-	overflow: hidden;
+
+	&._lock {
+		overflow: hidden;
+	}
 }
 .wrapper {
 	overflow: hidden;
@@ -93,6 +94,50 @@ body.lock {
 	display: flex;
 	flex-direction: column;
 }
+
+
+
+// <ОСНОВНАЯ СЕТКА> ====================================================
+._container {
+	max-width: $mWContainer;
+	margin: 0 auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	// @media (max-width: $md1) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3) {
+	// 	max-width: none;
+	// 	padding: 0 10px;
+	// }
+}
+// ====================================================
+
+// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ > ====================================================
+@import "blocks/ui";
+// </ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ> ====================================================
+
+// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> ====================================================
+@import "blocks/visually-hidden";
+
+// @import "blocks/popup";
+@import "blocks/forms";
+@import "blocks/popup";
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/footer";
+@import "blocks/home";
+@import "blocks/slick";
+@import "blocks/article";
+@import "blocks/services";
+@import "blocks/corporate-events";
+@import "blocks/corporate-trainings";
+@import "blocks/about";
+
+// </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> ========================
 
 // <ОСНОВНОЙ БЛОК> ========================
 .content {
@@ -122,54 +167,4 @@ body.lock {
 	}
 }
 
-.title {
-	font-family: "Century Gothic";
-	font-weight: 700;
-	font-size: 3.2rem;
-	line-height: 4rem;
-	color: $dark;
-
-	@media (max-width: $md4) {
-		font-size: 2.6rem;
-		line-height: 3.2rem;
-	}
-}
 // ================================================
-
-// <ОСНОВНАЯ СЕТКА> ====================================================
-._container {
-	max-width: $mWContainer;
-	margin: 0 auto;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	// @media (max-width: $md1) {
-	// 	max-width: 970px;
-	// }
-	// @media (max-width: $md2) {
-	// 	max-width: 750px;
-	// }
-	// @media (max-width: $md3) {
-	// 	max-width: none;
-	// 	padding: 0 10px;
-	// }
-}
-// ====================================================
-
-// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ > ====================================================
-@import "blocks/ui";
-// </ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ> ====================================================
-
-// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> ====================================================
-@import "blocks/visually-hidden";
-
-// @import "blocks/popup";
-@import "blocks/header";
-@import "blocks/burger";
-@import "blocks/footer";
-@import "blocks/home";
-@import "blocks/article";
-@import "blocks/services";
-@import "blocks/corporate-events";
-@import "blocks/corporate-trainings";
-@import "blocks/about";
-// </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> ========================
