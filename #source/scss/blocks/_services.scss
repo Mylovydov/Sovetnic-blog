@@ -282,7 +282,6 @@
 	}
 	// .slider-services__item
 	&__item {
-		cursor: pointer;
 		position: relative;
 	}
 	&__item-img {
@@ -291,6 +290,7 @@
 		border-radius: 0.5rem;
 		padding-bottom: 108.4%;
 		overflow: hidden;
+		display: block;
 		img {
 			position: absolute;
 			top: 0;
