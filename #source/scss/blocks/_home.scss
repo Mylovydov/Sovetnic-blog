@@ -202,12 +202,12 @@
 		font-size: 0;
 
 		border: none;
-		background: #9bcded url(../../../img/consultation/arrow.svg) center no-repeat;
+		background: #9bcded url(../img/consultation/arrow.svg) center no-repeat;
 
 		transition: all 0.2s linear;
 
 		&:hover {
-			background: #acddfc url(../../../img/consultation/arrow.svg) center no-repeat;
+			background: #acddfc url(../img/consultation/arrow.svg) center no-repeat;
 		}
 
 		@media (max-width: 460px) {
