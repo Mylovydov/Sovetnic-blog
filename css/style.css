@@ -1037,11 +1037,6 @@ textarea.input {
     border-bottom: 2px solid #3b1788;
   }
 }
-@media (max-width: 991.98px) {
-  .menu__list li {
-    padding: 2.3rem 1.5rem 2.3rem;
-  }
-}
 .menu__link {
   display: inline-block;
   font-weight: 500;
@@ -1049,6 +1044,11 @@ textarea.input {
   color: #1D0B44;
   line-height: 2.2rem;
   padding: 2.3rem 4rem 2.3rem;
+}
+@media (max-width: 991.98px) {
+  .menu__link {
+    padding: 2.3rem 1.5rem 2.3rem;
+  }
 }
 @media (max-width: 767.98px) {
   .menu__body {
@@ -1059,7 +1059,7 @@ textarea.input {
     left: 0;
     background-color: #ece6f7;
     overflow: auto;
-    padding: 9.5rem 0 6.5rem 0;
+    padding: 7.5rem 0 6.5rem 0;
     transform: translateY(-100%);
     transition: transform 0.4s ease;
   }
@@ -1070,13 +1070,13 @@ textarea.input {
     flex-direction: column;
   }
   .menu__list li {
-    padding: 0 0 4rem 0;
+    padding: 0 0 2.5rem 0;
   }
   .menu__list li:last-child {
     padding: 0;
   }
   .menu__link {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 
