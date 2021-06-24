@@ -6,24 +6,35 @@
 // 	});
 // });
 
-$(document).ready(function(){
-	$('.articles-preview__slider').slick({
+$(document).ready(function () {
+	$('.articles-slider__slider').slick({
 		dots: true,
-		appendArrows:$('.control-slider__body'),
-		appendDots:$('.control-slider__body'),
-		swipe: false
+		appendArrows: $('.controls-slider-articles__body'),
+		appendDots: $('.controls-slider-articles__body'),
+		swipe: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					swipe: true
+				}
+			}
+		]
 	});
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.slider-services').slick({
 		dots: true,
-		appendArrows:$('.control-services__body'),
-		appendDots:$('.control-services__body'),
+		appendArrows: $('.control-services__body'),
+		appendDots: $('.control-services__body'),
 		swipe: true
 	});
 });
 
-var mixer = mixitup('.comments-article__body');
 
+
+if (document.querySelectorAll('.comments-article__body').length>0){
+	let mixer = mixitup('.comments-article__body');
+}
 // ================================================

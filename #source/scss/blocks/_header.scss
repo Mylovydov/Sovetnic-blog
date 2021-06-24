@@ -2,32 +2,50 @@
 // ================================================
 .header {
 	border: 1px solid #f5f0ff;
-	margin-bottom: 4rem;
+	margin-bottom: 40px;
 
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 50;
 
-	box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.05);
-	background-color: $white;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background-color: #fff;
+		box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.05);
+	}
 	// .header__container
 	&__container {
 	}
-	// .header__row
-	&__row {
+	// .header__body
+	&__body {
 		position: relative;
+		height: 70px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 7rem;
-
-		// background: $white;
+		@media (max-width:$md3){
+			  height: 60px;
+		}
 	}
 	// .header__logo
 	&__logo {
-		flex: 0 0 15rem;
-		margin-right: 2rem;
+		flex: 0 0 150px;
+		margin-right: 20px;
+		position: relative;
+		z-index: 3;
+		@media (max-width: $md3) {
+			margin: 0 auto;
+			flex: 0 0 130px;
+		}
+		img {
+		}
 	}
 	// .header__menu
 	&__menu {
@@ -40,11 +58,33 @@
 	}
 	// .menu__body
 	&__body {
+		@media (max-width:$md3){
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #ece6f7;
+			overflow: auto;
+			padding: 90px 0 65px 0;
+			transform: translateY(-100%);
+			transition: transform 0.4s ease;
+
+			&._active {
+				transform: translateY(0);
+			}
+		}
+		// position: relative;
+		& ._active {
+		}
+
 	}
 	// .menu__list
 	&__list {
 		display: flex;
 		align-items: center;
+		position: relative;
+		z-index: 2;
 		li {
 			border-bottom: 2px solid rgba($secondary, 0);
 			transition: all 0.2s linear;
@@ -53,6 +93,15 @@
 				@media (min-width: $md3) {
 					background-color: #f7f6fa;
 					border-bottom: 2px solid rgba($secondary, 1);
+				}
+			}
+		}
+		@media (max-width:$md3){
+			flex-direction: column;
+			li {
+				padding: 0 0 2.5rem 0;
+				&:last-child {
+					padding: 0;
 				}
 			}
 		}
@@ -69,36 +118,7 @@
 		@media (max-width: $md2) {
 			padding: 2.3rem 1.5rem 2.3rem;
 		}
-	}
-
-	@media (max-width: $md3) {
-		&__body {
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			background-color: #ece6f7;
-			overflow: auto;
-			padding: 7.5rem 0 6.5rem 0;
-			transform: translateY(-100%);
-			transition: transform 0.4s ease;
-
-			&._active {
-				transform: translateY(0);
-			}
-		}
-		&__list {
-			flex-direction: column;
-			li {
-				padding: 0 0 2.5rem 0;
-				&:last-child {
-					padding: 0;
-				}
-			}
-		}
-
-		&__link {
+		@media (max-width:$md3){
 			font-size: 2.5rem;
 		}
 	}
@@ -108,8 +128,8 @@
 	@media (max-width: $md3) {
 		display: block;
 		position: absolute;
-		top: 27px;
-		right: 10px;
+		top: 21px;
+		right: 0px;
 		width: 30px;
 		height: 18px;
 		cursor: pointer;

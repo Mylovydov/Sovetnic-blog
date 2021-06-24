@@ -13,45 +13,10 @@
 
 <body>
 	<div class="wrapper">
-		<!-- <header class="header">
-			<div class="header__container _container">
-				<div class="header__row">
-					<a href="index.html" class="header__logo">
-						<img src="img/logo.svg" alt="logo">
-					</a>
-					<div class="header__burger burger">
-						<span></span>
-					</div>
-
-					<nav class="nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a class="nav__link" href="index.html">Главная</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="about.html">О Вас</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="services.html">Услуги</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Карта сайта</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					</button>
-				</div>
-			</div>
-		</header> -->
-
-
 		<header class="header">
 			<div class="header__container _container">
-				<div class="header__row">
-					<a href="index.html" class="header__logo">
+				<div class="header__body">
+					<a class="header__logo" href="index.html">
 						<img src="img/logo.svg" alt="logo">
 					</a>
 					<div class="header__menu menu">
@@ -196,45 +161,35 @@
 					</div>
 				</div>
 
-				<div class="corporate-trainings__banners banners-events-corporate">
-					<div class="banners-events-corporate__container _container">
-						<div class="banners">
-							<div class="banners__row">
-								<div class="banners__column">
-									<div class="banners__item">
-										<img class="banners__img" src="img/banners/1.jpg" alt="">
-
-										<div class="banners__body banners__body--maxw banners__body--start banners__body--padd">
-											<div class="banners__content">
-												<div class="banners__body-title banners__body-title--ta">
-													<span class="banners__body-title--fz">Управление командой</span>
-													Простыми словами
-												</div>
+				<div class="corporate-trainings__banners banner">
+					<div class="banner__container _container">
+						<div class="banner__row">
+							<div class="banner__column">
+								<div class="banner__item">
+									<img class="banner__image" src="img/banners/1.jpg" alt="">
+									<div class="banner__body">
+										<div class="banner__content">
+											<div class="banner__title">
+												<span>Управление командой</span>Простыми словами
 											</div>
-
-											<a class="btn btn--purple btn--purple-maxw _popup-link" href="#buynow" type="submit">Купить сейчас</a>
 										</div>
-									</div>
-								</div>
-
-								<div class="banners__column">
-									<div class="banners__item">
-										<img class="banners__img" src="img/banners/4.jpg" alt="">
-
-										<div class="banners__body banners__body--maxw banners__body--start banners__body--padd">
-											<div class="banners__content">
-												<div class="banners__body-title banners__body-title--ta">
-													<span class="banners__body-title--fz">Как стать лучшим</span>
-													В отделе продаж
-												</div>
-											</div>
-
-											<a class="btn btn--blue _popup-link" href="#buynow" type="submit">Купить сейчас</a>
-										</div>
+										<a class="btn btn--purple _popup-link" href="#buynow">Купить сейчас</a>
 									</div>
 								</div>
 							</div>
-
+							<div class="banner__column">
+								<div class="banner__item">
+									<img class="banner__image" src="img/banners/4.jpg" alt="">
+									<div class="banner__body">
+										<div class="banner__content">
+											<div class="banner__title">
+												<span>Как стать лучшим</span>В отделе продаж
+											</div>
+										</div>
+										<a class="btn btn--blue _popup-link" href="#buynow">Купить сейчас</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -254,7 +209,7 @@
 									<div class="group-form__column">
 										<label for="userphone">
 											<div class="group-form__title">Введите телефон</div>
-											<input class="input _phone" autocomplete="off" id="userphone" type="text" name="userphone" data-value="+38(999) 999 9999">
+											<input class="input _phone _req" autocomplete="off" id="userphone" type="text" name="userphone" data-error="Введите номер телефона" data-value="+38(999) 999 9999">
 										</label>
 									</div>
 								</div>
@@ -271,11 +226,11 @@
 									<div class="group-form__column">
 										<label for="select-service">
 											<div class="group-form__title">Выберите услугу</div>
-												<select class="service" name="select-service" id="select-service">
-													<option value="1" selected="selected">Спортивные корпоративные праздники</option>
-													<option value="2">Семейный праздники</option>
-													<option value="3">Активные форматы командообразования</option>
-												</select>
+											<select class="service" name="select-service" id="select-service">
+												<option value="1" selected="selected">Спортивные корпоративные праздники</option>
+												<option value="2">Семейный праздники</option>
+												<option value="3">Активные форматы командообразования</option>
+											</select>
 										</label>
 									</div>
 								</div>
@@ -284,7 +239,8 @@
 							<div class="form__group group-form">
 								<label for="form-text">
 									<div class="group-form__title">Опишите запрос</div>
-										<textarea class="input" id="form-text" autocomplete="off" name="user-message" data-value=""></textarea>
+									<textarea class="input" id="form-text" autocomplete="off" name="user-message"
+										data-value=""></textarea>
 								</label>
 							</div>
 

@@ -70,22 +70,22 @@
 
 /* Конкретный слайдер .articles*/
 
-.articles-preview .slick-list {
+.articles-slider__slider .slick-list {
 	overflow: hidden;
 }
 /* Лента слайдов */
-.articles-preview .slick-track {
+.articles-slider__slider .slick-track {
 	display: flex;
 }
-.control-slider {
+.controls-slider-articles {
 	display: flex;
 }
-.control-slider__body {
+.controls-slider-articles__body {
 	display: inline-flex;
 	position: relative;
-	padding: 0 2.9rem;
+	padding: 0 29px;
 }
-.articles-preview .slick-arrow {
+.articles-slider .slick-arrow {
 	position: absolute;
 	font-size: 0;
 
@@ -93,27 +93,27 @@
 	transform: translateY(-50%);
 }
 
-.articles-preview .slick-arrow.slick-prev,
-.articles-preview .slick-arrow.slick-next {
+.articles-slider .slick-arrow.slick-prev,
+.articles-slider .slick-arrow.slick-next {
 	width: 10px;
 	height: 20px;
 }
 
-.articles-preview .slick-arrow.slick-prev {
+.articles-slider .slick-arrow.slick-prev {
 	left: 0;
 	background: url(../img/articles/arrow-prev.svg) 0 0 / 100% no-repeat;
 }
 
-.articles-preview .slick-arrow.slick-next {
+.articles-slider .slick-arrow.slick-next {
 	right: 0px;
 	background: url(../img/articles/arrow-next.svg) 0 0 / 100% no-repeat;
 }
 
-.articles-preview .slick-dots {
+.articles-slider .slick-dots {
 	display: flex;
 	align-items: center;
 }
-.articles-preview .slick-dots li {
+.articles-slider .slick-dots li {
 	height: 30px;
 	width: 30px;
 	background-color: #ece6f7;
@@ -130,33 +130,32 @@
 
 	transition: background-color 0.2s linear;
 }
-.articles-preview .slick-dots li:hover {
-
+.articles-slider .slick-dots li:hover {
 	@media (min-width: $md3) {
 		background-color: #f2eef8;
 	}
 }
 /* Элемент точки */
-.articles-preview .slick-dots li button {
+.articles-slider .slick-dots li button {
 	font-family: "Montserrat";
 	font-weight: 400;
-	font-size: 1.2rem;
-	line-height: 3rem;
+	font-size: 12px;
+	line-height: 30px;
 	background: transparent;
 
 	color: #3b1788;
 }
 /* Активная точка */
-.articles-preview .slick-dots li.slick-active {
+.articles-slider .slick-dots li.slick-active {
 	background-color: #fff;
 	border: 1px solid #e6e0f2;
 }
 /* Активная кнопка*/
-.articles-preview .slick-dots li.slick-active button {
+.articles-slider .slick-dots li.slick-active button {
 	font-weight: 700;
 }
 @media (max-width: 941px) {
-	.articles-preview__slider-control {
+	.controls-slider-articles {
 		justify-content: center;
 	}
 }
@@ -181,7 +180,7 @@
 	display: inline-flex;
 	align-items: center;
 	position: relative;
-	padding: 0 5.2rem;
+	padding: 0 52px;
 }
 
 .control-services__body .slick-arrow {

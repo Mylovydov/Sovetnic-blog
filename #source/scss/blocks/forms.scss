@@ -34,26 +34,24 @@
 	}
 	&__error {
 		position: absolute;
-		top: -1rem;
+		top: -10px;
 		left: 50%;
 		z-index: 2;
 
 		white-space: nowrap;
-		font-size: 1.2rem;
+		font-size: 12px;
+		color: $dark;
 		
 		background-color: $white;
-		border-radius: .5rem;
+		border-radius: 5px;
 		border: 1px solid #bdb1d7;
-		padding: .5rem 1rem;
+		padding: 5px 10px;
 
 		transform: translate(-50%);
 	}
 }
 
-.banners__form .form__error{
-	top: -3.5rem;
-	left: 50%;
-}
+
 
 // ================================================
 
@@ -106,6 +104,11 @@
 		@media (max-width: 636px) {
 			padding: 1.8rem 3.9rem 1.6rem;
 		}
+		.corporate-trainings__banners & {
+			@media (min-width:$md2){
+				max-width: 200px;
+			}
+		}
 	}
 	&--purple-maxw {
 		max-width: 22.1rem;
@@ -114,7 +117,6 @@
 		padding: 1.5rem 3.9rem 1.4rem;
 		border-radius: 5.5rem;
 		width: 100%;
-		max-width: 22.1rem;
 
 		background-color: #1daeff;
 		box-shadow: 0 1px 1px rgba(#62c7ff, 1), 0 3px 1px rgba(#0082cb, 1), 0 7px 26px rgba(#1daeff, 0.2);
@@ -127,6 +129,11 @@
 
 		@media (max-width: 636px) {
 			padding: 1.8rem 3.9rem 1.6rem;
+		}
+		.corporate-trainings__banners & {
+			@media (min-width:$md2){
+				max-width: 200px;
+			}
 		}
 	}
 
@@ -587,20 +594,13 @@ textarea.input {
 }
 
 // ================================================
-.form-banners {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-
-	// label {
-	// 	flex-grow: 1;
-	// }
-	// .form-banners__input
+.form-banner {
+	position: relative;
 	&__input {
 		width: 100%;
-		height: 4.7rem;
+		height: 47px;
 		display: block;
-		margin-bottom: 1rem;
+		margin: 0px 0px 10px/16px * 1em 0px;
 
 		background-color: $white;
 		border: 1px solid #d9d0eb;
@@ -609,13 +609,17 @@ textarea.input {
 
 		color: $secondary;
 		text-align: center;
-		font-size: 1.2rem;
+		font-size: 12px;
 		font-weight: 500;
 
 		transition: background-color 0.2s linear;
 
 		@media (max-width: 636px) {
-			height: 5.2rem;
+			height: 52px;
 		}
+	}
+	& .form__error{
+		top: -32px;
+		left: 50%;
 	}
 }

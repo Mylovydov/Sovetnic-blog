@@ -25,13 +25,13 @@
 // ===============================================
 
 // <Класс .ibg> ====================================================
-// .ibg{
+// ._ibg {
 // 	background-position: center;
 // 	background-size: cover;
 // 	background-repeat: no-repeat;
 // 	position: relative;
-// 	}
-// 	.ibg img{
+// }
+// .ibg img {
 // 	width: 0;
 // 	height: 0;
 // 	position: absolute;
@@ -39,25 +39,22 @@
 // 	left: 0;
 // 	opacity: 0;
 // 	visibility: hidden;
-// 	}
+// }
 
 // ===============================================
 
-
-
 // <ПЕРЕМЕННЫЕ> ===================================================================
-$primary: 	#F9F7FA;
-$secondary: #3B1788;
-$white: 		#fff;
-$dark: 		#1D0B44;
-$lighten: 	#B4B4CC;
-$statcolor: #C9C9DB;
+$primary: #f9f7fa;
+$secondary: #3b1788;
+$white: #fff;
+$dark: #1d0b44;
+$lighten: #b4b4cc;
+$statcolor: #c9c9db;
 
 $header-height: 36rem;
 
 // $z-index-header:1000;
 // ====================================================
-
 
 // <BREAKPOINTS> ====================================================
 $tablet-bp: 991px;
@@ -94,8 +91,6 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-
-
 
 // <ОСНОВНАЯ СЕТКА> ====================================================
 ._container {
@@ -142,18 +137,18 @@ body {
 
 // <ОСНОВНОЙ БЛОК> ========================
 .content {
-	padding: 10rem 0 5rem;
+	padding: 80px 0 40px;
 	flex: 1 1 auto;
 
 	@media (min-width: $md3) {
-		padding: 11.5rem 0 6rem;
+		padding: 100px 0 50px;
 	}
 
 	&__breadcrumbs {
 		margin-bottom: 3rem;
 
 		@media (min-width: $md2) {
-		margin-bottom: 5rem;
+			margin-bottom: 5rem;
 		}
 	}
 
@@ -164,7 +159,8 @@ body {
 	&__consultation {
 	}
 
-	&__articles {
+	// .content__articles-slider
+	&__articles-slider {
 	}
 }
 

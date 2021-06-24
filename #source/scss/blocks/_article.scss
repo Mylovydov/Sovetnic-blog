@@ -104,15 +104,22 @@
 	// .content-article__content
 	&__content {
 	}
-
+	// content-article__banners
+	&__banners {
+		.banner__item {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
 	// .content-article__img
 	&__img {
 		border-radius: 0.5rem;
 		width: 100%;
 		margin-bottom: 3rem;
 
-		@media (max-width:$md3){
-		margin-bottom: 1.5rem;
+		@media (max-width: $md3) {
+			margin-bottom: 1.5rem;
 		}
 	}
 
